@@ -120,6 +120,15 @@ with tab6:
         st.text("Your Ingredients List 📋")
         for i in shop:
             st.checkbox(i)
+     st.divider()
+    st.suheader("scale ingredient")
+    if st.button("scale serving"):
+        serving=st.number_input("Number Of Servings")
+        if serving and lists:
+            scale=fuctions.serving_recipe(shop, serving)
+            st.text(f"Your Ingredients List for {serving} serving  📋")
+            for i in scale:
+                st.checkbox(i)
 
 #The program can track cooking history and suggest recipes you haven't made recently 
 with tab7:
