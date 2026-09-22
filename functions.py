@@ -4,12 +4,13 @@ from openai import OpenAI
 import requests
 import os
 from dotenv import load_dotenv
+import streamlit as st
 
 # 1. Initialize the client by api key: 
 load_dotenv('key')
 client = OpenAI(
     base_url="https://openrouter.ai/api/v1",
-    api_key= os.getenv('key')
+    api_key= st.secrets['key']
 
 )
 
