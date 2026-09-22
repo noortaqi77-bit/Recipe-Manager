@@ -58,7 +58,7 @@ def last_cooked(recipe,date, df):
 #find oldest dates
 def oldest_recipe(df):
     oldest=df.sort_values(by ="Last Date")
-    return oldest.head(2)
+    return oldest.head(1)
 
 # Assistant:
 def get_llm(prompt):
