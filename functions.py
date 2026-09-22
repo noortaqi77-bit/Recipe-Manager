@@ -5,6 +5,7 @@ import requests
 import os
 from dotenv import load_dotenv
 import streamlit as st
+from fractions import Fraction
 
 # 1. Initialize the client by api key: 
 load_dotenv('key')
