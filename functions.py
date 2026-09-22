@@ -113,9 +113,9 @@ def serving_recipe(items, serving=1):
         new=0
         rest=""
         shop=item.split()
-        if item==shop[0]:
+        if shop:
             new=float(shop[0])* float(serving)
-        rest=" ".join(shop[1:])
+            rest=" ".join(shop[1:])
         scale.append(f"{new} {rest}")
     return scale
         
