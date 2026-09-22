@@ -97,7 +97,7 @@ with tab2:
 # The program displays a list of all recipe names with their preparation times         
 with tab3:
     st.header("All Recipes 🍽️")
-    st.table(data[["Recipe","Time (in minutes)"]].reset_index(drop=True))
+    st.table(data[["Recipe","Time (in minutes)"]].sort_values(by="Time (in minutes)").reset_index(drop=True))
     #st.dataframe(r, hide_index=True, use_container_width=True)
     
 #random recipes
