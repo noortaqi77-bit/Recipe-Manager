@@ -1,5 +1,5 @@
 # Recipe Manager
-
+application link :https://recipe-manager-6mpn8vhujw56dxsyitsp6p.streamlit.app/
 ## Description
 
 A Streamlit application for managing, searching, and discovering recipes.
