@@ -1,6 +1,5 @@
 # Recipe Manager
-application link :https://recipe-manager-6mpn8vhujw56dxsyitsp6p.streamlit.app/
-video link : 
+
 ## Description
 
 A Streamlit application for managing, searching, and discovering recipes.
@@ -36,5 +35,8 @@ history, and get recipe recommendations.
 - *Smart Chef:* Use AI to find recipes based on available ingredients
 
   or search for a specific recipe.
+  
+## links:
 
-
+application link :https://recipe-manager-6mpn8vhujw56dxsyitsp6p.streamlit.app/
+video link : 
