@@ -78,7 +78,7 @@ with tab2:
         else:
             st.write(search)
     st.divider()
-    st.subheader("search from another data")
+    st.subheader("Search From Another Data")
     dash=st.text_input("Enter the dash ")
     if st.button("search"):
         if dash:
