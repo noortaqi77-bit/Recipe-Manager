@@ -86,14 +86,14 @@ with tab2:
             if lis is None:
                 st.text("No recipes found with this name")
             else:
-                new_list2=pd.DataFrame([lis])
-                new_list=st.dataframe(new_list2)
-                new_list2=new_list.T
-                if st.button("save"):
-                    new_list2.to_csv("recipes.csv", mode="a", header=False, index=False)
-                    st.success("Recipe saved successfully")
-                    t.sleep(5)
-                    st.rerun()            
+                #new_list2=pd.DataFrame([lis])
+                new_list=st.dataframe(lis)
+                #new_list2=new_list.T
+                # if st.button("save"):
+                #     new_list2.to_csv("recipes.csv", mode="a", header=False, index=False)
+                #     st.success("Recipe saved successfully")
+                #     t.sleep(5)
+                #     st.rerun()            
 
 # The program displays a list of all recipe names with their preparation times         
 with tab3:
