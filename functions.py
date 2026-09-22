@@ -98,8 +98,8 @@ def search_api(dash):
                          "instructions":meal["strInstructions"],
                          "Level":"medium",
                          "Category":meal.get("strCategory", ""),
-                         "Rate":3, 
-                         "Last Date":datetime.date.today()
+                         "Rate":None, 
+                         "Last Date":meal.get("datemodified") or "N/A"
             }
     return dateframe_api
 
