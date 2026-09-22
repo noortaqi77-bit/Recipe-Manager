@@ -116,7 +116,7 @@ with tab5:
 with tab6:
     st.header("Shopping list 🛒 ")
     lists=st.selectbox("choose recipe", options=data["Recipe"])
-    if lists:
+    if lists and st.button("generate"):
         shop=functions.shopping_list(lists, data)
         st.text("Your Ingredients List 📋")
         for i in shop:
