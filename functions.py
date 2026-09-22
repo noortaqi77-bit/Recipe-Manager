@@ -122,8 +122,8 @@ def search_api(dash):
 def serving_recipe(items, serving):
     scale=[]
     for item in items:
-        shop=item.split()
-        new=shop[0]*serving
+        shop=item.split(" ")
+        new=shop[0] * serving
         rest=shop[1]
         scale.append(f"{new} {rest}")
     return scale
