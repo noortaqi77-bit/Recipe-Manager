@@ -107,7 +107,7 @@ def search_api(dash):
 
 
        
-def serving_recipe(items, serving):
+def serving_recipe(items, serving=1):
     scale=[]
     for item in items:
         new=0
