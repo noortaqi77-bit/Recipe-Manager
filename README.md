@@ -39,4 +39,5 @@ history, and get recipe recommendations.
 ## links:
 
 application link :https://recipe-manager-6mpn8vhujw56dxsyitsp6p.streamlit.app/
-video link : 
+
+video link : https://drive.google.com/file/d/1eO0TlfGH8M-iiW_ex5nAVKDEFYPyJAtV/view?usp=sharing
