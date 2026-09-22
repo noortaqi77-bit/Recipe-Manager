@@ -105,19 +105,6 @@ def search_api(dash):
             }
     return dateframe_api
 
- 
-# def scale_recipe(select_recipe, serving, df):
-#     ingredient_list=[]
-#     filter_recipe=df[df["Recipe"]==select_recipe]
-#     split_item=filter_recipe["Ingredients"].values[0]
-
-#     for item in split_item:
-#         splits=item.split()
-#         num=float(splits[1])
-#         new_intrgre=" ".join(splits[1:])
-#         new_scale=num*serving
-#         ingredient_list.append(f"{new_scale} {new_intrgre}")
-#     return ", ".join(ingredient_list)
 
        
 def serving_recipe(items, serving):
@@ -127,7 +114,7 @@ def serving_recipe(items, serving):
         rest=""
         shop=item.split()
         if item==shop[0]:
-            new=float(Fraction(shop[0])) * float(serving)
+            new=float(shop[0])* float(serving)
         rest=" ".join(shop[1:])
         scale.append(f"{new} {rest}")
     return scale
