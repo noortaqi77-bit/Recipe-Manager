@@ -125,10 +125,15 @@ with tab6:
     st.subheader("scale ingredient")
     serving=st.number_input("Number Of Servings")
     if st.button("scale serving") and list:
-            scale=functions.serving_recipe(shop, serving)
-            st.text(f"Your Ingredients List for {serving} serving  📋")
-            for i in scale:
-                st.checkbox(i)
+        prompt=f"make this recipe {lists} and the ingredients is {shop} , for {serving} serving , and give scale ingredient quantities based on desired number of servings"
+        result=functions.get_llm(prompt)
+        st.write(result)
+    else:
+        st.warning("please select recipe above")
+            # scale=functions.serving_recipe(shop, serving)
+            # st.text(f"Your Ingredients List for {serving} serving  📋")
+            # for i in scale:
+            #     st.checkbox(i)
 
 #The program can track cooking history and suggest recipes you haven't made recently 
 with tab7:
