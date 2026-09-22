@@ -41,7 +41,7 @@ def search_recipe(find, df):
 # shopping list step
 def shopping_list(selected, df):
     shop=[]
-    filter_recipe=df[df["Recipe"].isin(selected)]
+    filter_recipe=df[df["Recipe"]==selected]
     for i in filter_recipe["Ingredients"]:
         #split the row it self
         item=str(i).split(",")
