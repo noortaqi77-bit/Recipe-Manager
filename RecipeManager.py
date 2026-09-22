@@ -114,7 +114,7 @@ with tab5:
 #4. The program can generate a shopping list based on selected recipes  
 with tab6:
     st.header("Shopping list 🛒 ")
-    lists=st.multiselect("choose recipe", options=data["Recipe"])
+    lists=st.selectbox("choose recipe", options=data["Recipe"])
     if lists:
         shop=functions.shopping_list(lists, data)
         st.text("Your Ingredients List 📋")
