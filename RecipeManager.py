@@ -123,10 +123,9 @@ with tab6:
             st.checkbox(i)
     st.divider()
     st.subheader("scale ingredient")
-    if st.button("scale serving"):
-        serving=st.number_input("Number Of Servings")
-        if serving and lists:
-            scale=fuctions.serving_recipe(shop, serving)
+    serving=st.number_input("Number Of Servings")
+    if st.button("scale serving") and list:
+            scale=functions.serving_recipe(shop, serving)
             st.text(f"Your Ingredients List for {serving} serving  📋")
             for i in scale:
                 st.checkbox(i)
