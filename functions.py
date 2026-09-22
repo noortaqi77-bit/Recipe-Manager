@@ -70,7 +70,7 @@ def get_llm(prompt):
         messages=[
             {
                 "role": "system",
-                "content": "You are a chef assistant . provide a recipes ideas by the ingredients",
+                "content": "You are a chef assistant . provide a recipes ideas by the ingredients or scale a serving for recipe ingredients",
             },
             {"role": "user", "content": prompt},
         ],
@@ -107,17 +107,17 @@ def search_api(dash):
 
 
        
-def serving_recipe(items, serving=1):
-    scale=[]
-    for item in items:
-        new=0
-        rest=""
-        shop=item.split()
-        if shop:
-            new=float(Fraction(shop[0]))* float(serving)
-            rest=" ".join(shop[1:])
-            scale.append(f"{new} {rest}")
-    return scale
+# def serving_recipe(items, serving=1):
+#     scale=[]
+#     for item in items:
+#         new=0
+#         rest=""
+#         shop=item.split()
+#         if shop:
+#             new=float(Fraction(shop[0]))* float(serving)
+#             rest=" ".join(shop[1:])
+#             scale.append(f"{new} {rest}")
+#     return scale
         
     
         
