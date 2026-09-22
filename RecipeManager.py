@@ -122,7 +122,7 @@ with tab6:
         for i in shop:
             st.checkbox(i)
     st.divider()
-    st.suheader("scale ingredient")
+    st.subheader("scale ingredient")
     if st.button("scale serving"):
         serving=st.number_input("Number Of Servings")
         if serving and lists:
