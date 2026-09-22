@@ -77,6 +77,7 @@ with tab2:
             st.error("There is no recipe with this ingradient!")
         else:
             st.write(search)
+            
     st.divider()
     st.subheader("Search From Another Data")
     dash=st.text_input("Enter the dash ")
@@ -120,7 +121,7 @@ with tab6:
         st.text("Your Ingredients List 📋")
         for i in shop:
             st.checkbox(i)
-     st.divider()
+    st.divider()
     st.suheader("scale ingredient")
     if st.button("scale serving"):
         serving=st.number_input("Number Of Servings")
