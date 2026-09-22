@@ -117,7 +117,17 @@ def search_api(dash):
 #         new_scale=num*serving
 #         ingredient_list.append(f"{new_scale} {new_intrgre}")
 #     return ", ".join(ingredient_list)
+
        
+def serving_recipe(items, serving):
+    scale=[]
+    for item in items:
+        shop=item.spilt(" ", 1)
+        new=float(shop[0])*serving
+        rest=shop[1]
+        scale.append(f"{new} {rest}")
+    return scale
+        
     
         
 
