@@ -1,5 +1,6 @@
 # Recipe Manager
 application link :https://recipe-manager-6mpn8vhujw56dxsyitsp6p.streamlit.app/
+video link : 
 ## Description
 
 A Streamlit application for managing, searching, and discovering recipes.
@@ -12,11 +13,11 @@ history, and get recipe recommendations.
 
 - *Add New Recipes:* Add a recipe with its name, preparation time,
 
-  ingredients, and cooking steps.
+  ingredients, and cooking steps and save it to recipes list.
 
-- *Find Recipes:* Search for recipes by ingredient or search for a
+- *Find Recipes:* Search for recipes by ingredient or search from an external API data by
 
-  recipe name using an external API.
+  recipe name.
 
 - *All Recipes:* View all recipes sorted by preparation time.
 
@@ -26,7 +27,7 @@ history, and get recipe recommendations.
 
 - *Shopping List:* Select a recipe and view its ingredients as a
 
-  shopping list.
+  shopping list, scale ingredient quantities based on desired number of servings using AI assistant.
 
 - *Cooking History:* Update the last cooked date and get suggestions
 
@@ -36,4 +37,4 @@ history, and get recipe recommendations.
 
   or search for a specific recipe.
 
-#
+
