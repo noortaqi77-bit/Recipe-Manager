@@ -1,3 +1,6 @@
 streamlit
 openai
 dotenv
+ultralytics
+pillow
+opencv-python-headless
